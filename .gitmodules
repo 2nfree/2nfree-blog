@@ -1,0 +1,3 @@
+[submodule "static"]
+	path = static
+	url = git@github.com:2nfree/2nfree-blog-static.git

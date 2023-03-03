@@ -1,0 +1,9 @@
+- name: Hexo
+  link: https://hexo.io/
+  description: 快速、简洁且高效的博客框架
+  avatar: https://hexo.io/icon/favicon-196x196.png
+
+- name: EvanNotFound’s Blog
+  link: https://ohevan.com/
+  description: Evan的部落阁，用香港记者的速度更新文章
+  avatar: https://evan.beee.top/avatar.png

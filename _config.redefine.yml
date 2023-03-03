@@ -1,0 +1,189 @@
+base_info:
+  title: "2nfree's Blog" #标题
+  author: 背着蒜头的耿鬼 #作者
+  url: https://blog.2nfree.com #外部链接
+  logo_img:
+
+style:
+  primary_color: "#005080" #网站主题色
+  avatar: https://cdn.jsdelivr.net/gh/2nfree/2nfree-blog-static/images/avatar.png #作者头像
+  favicon: https://cdn.jsdelivr.net/gh/2nfree/2nfree-blog-static/images/logo.svg #网站 favicon 图标
+  article_img_align: center #文章内容页的图片排列位置
+  right_side_width: 210px #设置右侧 TOC 目录模块的宽度
+  content_max_width: 1000px #设置内容区域的最大宽度
+  nav_color: #导航栏的渐变背景
+    left: "#f78736" #左边的颜色
+    right: "#367df7" #右边的颜色
+    transparency: 35 #导航栏的背景透明度 (10-99)
+  hover: #鼠标悬浮时的样式
+    shadow: true #阴影效果
+    scale: false #缩放效果
+  first_screen: #首屏
+    enable: true
+    background_image: #首屏背景图片
+      light: https://cdn.jsdelivr.net/gh/2nfree/2nfree-blog-static/images/background-light.webp
+      dark: https://cdn.jsdelivr.net/gh/2nfree/2nfree-blog-static/images/background-night.webp
+    title_color: #首屏标题的文字颜色
+      light: "#fff"
+      dark: "#000"
+    description: The quick brown fox jumps over the lazy dog #首屏标题
+    custom_font: #自定义字体
+      enable: false
+      font_family:
+      font_url:
+  scroll: #页面滚动时的样式
+    progress_bar: #页面滚动时在网站顶部显示滚动进度条
+      enable: true
+    percent: #页面滚动时在网站右下角显示滚动百分比
+      enable: false
+
+#social_contact 仅在首屏开启状态下才生效
+social_contact: # 其他第三方链接图标及链接
+  enable: true
+  links: #可以在这个网站查询logo https://fontawesome.com/icons?d=gallery&s=solid&m=free
+    github: https://github.com/2nfree
+    twitter: https://twitter.com/2Nfree
+    email: komorebi2333@gmail.com
+
+menu:
+  Home:
+    path: /
+    icon: fa-regular fa-house
+  Archives:
+    path: /archives
+    icon: fa-regular fa-archive
+  Categories:
+    path: /categories
+    icon: fa-regular fa-folder-open
+  Tags:
+    path: /tags
+    icon: fa-regular fa-tag
+  About:
+    path: /about
+    icon: fa-regular fa-user
+  Links:
+    path: /links
+    icon: fa-regular fa-link
+
+home_article:
+  date_format: auto # date format in home page article block, value: auto | relative | YYYY-MM-DD | YYYY.MM.DD HH:mm:ss | DD/MM/YYYY | and etc. Support moment js format, see: https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/
+  category:
+    enable: true # show category in home page article block
+    limit: 3 # max number of categories shown in home page article block
+  tag:
+    enable: true # show tags in home page article block
+    limit: 3 # max number of tags shown in home page article block
+
+post:
+  #统计
+  word_count:
+    enable: true
+    wordcount: true # 文章字数统计
+    min2read: true # 文章阅读时长
+  #作者标识
+  author_label:
+    enable: true
+    auto: true
+    custom_label_list: ["Trainee", "Engineer", "Architect", "CTO", "BOSS"]
+
+code_block:
+  copy: true #代码块开启复制按钮
+  style: mac #代码块样式simple | mac
+
+toc:
+  enable: true #设置文章TOC目录结构
+  number: true #给目录结构自动加上数字编号
+  expand_all: true #展开所有目录结构，true 自动展开所有的目录结构，false 边滚动页面边展开对应的位置的目录
+  init_open: true #打开文章页时是否自动打开 TOC 目录结构
+
+copyright_info:
+  enable: true #用于开启文章内容页的文章版权信息模块
+
+website_count: #该配置项用于设置网站计数
+  busuanzi_count:
+    enable: true
+    site_uv: false #网站访问人数
+    site_pv: false #网站总访问量
+    page_pv: true #文章阅读次数（显示在文章内容页）
+
+local_search:
+  enable: true #开启搜索功能
+  preload: true #在页面加载时预加载搜索数据
+
+search:
+  path: search.json
+  field: post
+  content: true
+  format: striptags
+
+comment: #评论系统
+  enable: true
+  use: gitalk
+  gitalk:
+    github_id: 2Nfree
+    repository: 2nfree.github.io
+    client_id: f0f74b0cc1d9323fe15f
+    client_secret: 74213435c72bf1a18c20d91c35c325fc985ff79d
+
+friend_links:
+  columns: 2
+
+rss:
+  enable: true
+
+lazyload:
+  enable: true
+
+cdn:
+  enable: false
+
+pjax:
+  enable: false
+
+recommended_article: # 文章推荐，需要 npm install nodejieba
+  enable: true
+  title: 推荐阅读
+  icon: fa-solid fa-bookmark
+  max_count: 3
+  # placeholder_img: https://evan.beee.top/img/wallhaven-wqery6-light.webp
+  # 不展示文章推荐：
+  # front-matter 使用 skip_recommended_article: true 关闭
+  # 不在以下文件夹文章中展示文章推荐 根目录是source/
+  # skip_dirs:
+  #   - wiki/
+
+fontawesome: # select fontawesome versions you want to use
+  thin: false # use fontawesome thin version or not
+  light: false # use fontawesome light version or not
+  duotone: false # use fontawesome duotone version or not
+
+footer:
+  runtime: false #是否显示网站运行时间
+  start_time: 2022/8/17 11:45:14 #网站起始时间。用于计算网站运行时间和版权日期
+  customize: #页脚自定义内容。支持 html 代码
+  icp: #网站备案号
+    enable: false
+    number:
+    url:
+
+inject:
+  enable: false
+  head: # inject code into <head> tag
+    - 
+    - 
+  footer: # inject code into <footer> tag
+    - 
+    - 
+
+plugins:
+  aplayer: # APlayer音乐播放器
+    enable: false
+    audio:
+      - name: # audio name
+        artist: # audio artist
+        url: # audio url
+        cover: # audio cover url
+      - name: 
+        artist: 
+        url: 
+        cover: 
